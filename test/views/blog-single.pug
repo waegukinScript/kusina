@@ -1,0 +1,350 @@
+extends layout
+
+block content
+
+  // ================ Start banner Area =================
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-6
+          h1 about us
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') home
+              span.lnr.lnr-arrow-right
+              a(href='blog-home.html') Blog
+              span.lnr.lnr-arrow-right
+              a(href='blog-single.html') Blog Details
+  // ================ End banner Area =================
+  // Start post-content Area
+  section.post-content-area.single-post-area
+    .container
+      .row
+        .col-lg-8.posts-list
+          .single-post.row
+            .col-lg-12
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img1.jpg' alt='')
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+                ul.social-links.col-lg-12.col-md-12.col-6
+                  li
+                    a(href='#')
+                      i.fa.fa-facebook
+                  li
+                    a(href='#')
+                      i.fa.fa-twitter
+                  li
+                    a(href='#')
+                      i.fa.fa-github
+                  li
+                    a(href='#')
+                      i.fa.fa-behance
+            .col-lg-9.col-md-9
+              h3.mt-20.mb-20 Astronomy Binoculars A Great Alternative
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              p
+                | Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend
+                | money on boot
+                | camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the
+                | willpower
+                | to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a
+                | self-imposed
+              p
+                | Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend
+                | money on boot
+                | camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the
+                | willpower
+                | to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a
+                | self-imposed
+            .col-lg-12
+              .quotes
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who
+                | has
+                | the willpower to actually sit through a self-imposed MCSE training.
+              .row.mt-30.mb-30
+                .col-6
+                  img.img-fluid(src='img/blog/post-img1.jpg' alt='')
+                .col-6
+                  img.img-fluid(src='img/blog/post-img2.jpg' alt='')
+                .col-lg-12.mt-30
+                  p
+                    | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                    | spend money
+                    | on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who
+                    | has
+                    | the willpower.
+                  p
+                    | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                    | spend money
+                    | on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who
+                    | has
+                    | the willpower.
+          .navigation-area
+            .row
+              .col-lg-6.col-md-6.col-12.nav-left.flex-row.d-flex.justify-content-start.align-items-center
+                .thumb
+                  a(href='#')
+                    img.img-fluid(src='img/blog/prev.jpg' alt='')
+                .arrow
+                  a(href='#')
+                    span.lnr.text-white.lnr-arrow-left
+                .detials
+                  p Prev Post
+                  a(href='#')
+                    h4 Space The Final Frontier
+              .col-lg-6.col-md-6.col-12.nav-right.flex-row.d-flex.justify-content-end.align-items-center
+                .detials
+                  p Next Post
+                  a(href='#')
+                    h4 Telescopes 101
+                .arrow
+                  a(href='#')
+                    span.lnr.text-white.lnr-arrow-right
+                .thumb
+                  a(href='#')
+                    img.img-fluid(src='img/blog/next.jpg' alt='')
+          .comments-area
+            h4 05 Comments
+            .comment-list
+              .single-comment.justify-content-between.d-flex
+                .user.justify-content-between.d-flex
+                  .thumb
+                    img(src='img/blog/c1.jpg' alt='')
+                  .desc
+                    h5
+                      a(href='#') Emilly Blunt
+                    p.date December 4, 2017 at 3:12 pm 
+                    p.comment
+                      | Never say goodbye till the end comes!
+                .reply-btn
+                  a.btn-reply.text-uppercase(href='') reply
+            .comment-list.left-padding
+              .single-comment.justify-content-between.d-flex
+                .user.justify-content-between.d-flex
+                  .thumb
+                    img(src='img/blog/c2.jpg' alt='')
+                  .desc
+                    h5
+                      a(href='#') Elsie Cunningham
+                    p.date December 4, 2017 at 3:12 pm 
+                    p.comment
+                      | Never say goodbye till the end comes!
+                .reply-btn
+                  a.btn-reply.text-uppercase(href='') reply
+            .comment-list.left-padding
+              .single-comment.justify-content-between.d-flex
+                .user.justify-content-between.d-flex
+                  .thumb
+                    img(src='img/blog/c3.jpg' alt='')
+                  .desc
+                    h5
+                      a(href='#') Annie Stephens
+                    p.date December 4, 2017 at 3:12 pm 
+                    p.comment
+                      | Never say goodbye till the end comes!
+                .reply-btn
+                  a.btn-reply.text-uppercase(href='') reply
+            .comment-list
+              .single-comment.justify-content-between.d-flex
+                .user.justify-content-between.d-flex
+                  .thumb
+                    img(src='img/blog/c4.jpg' alt='')
+                  .desc
+                    h5
+                      a(href='#') Maria Luna
+                    p.date December 4, 2017 at 3:12 pm 
+                    p.comment
+                      | Never say goodbye till the end comes!
+                .reply-btn
+                  a.btn-reply.text-uppercase(href='') reply
+            .comment-list
+              .single-comment.justify-content-between.d-flex
+                .user.justify-content-between.d-flex
+                  .thumb
+                    img(src='img/blog/c5.jpg' alt='')
+                  .desc
+                    h5
+                      a(href='#') Ina Hayes
+                    p.date December 4, 2017 at 3:12 pm 
+                    p.comment
+                      | Never say goodbye till the end comes!
+                .reply-btn
+                  a.btn-reply.text-uppercase(href='') reply
+          .comment-form
+            h4 Leave a Comment
+            form
+              .form-group.form-inline
+                .form-group.col-lg-6.col-md-12.name
+                  input#name.form-control(type='text' placeholder='Enter Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'")
+                .form-group.col-lg-6.col-md-12.email
+                  input#email.form-control(type='email' placeholder='Enter email address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'")
+              .form-group
+                input#subject.form-control(type='text' placeholder='Subject' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'")
+              .form-group
+                textarea.form-control.mb-10(rows='5' name='message' placeholder='Messege' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required='')
+              a.primary-btn(href='#') Post Comment
+        .col-lg-4.sidebar-widgets
+          .widget-wrap
+            .single-sidebar-widget.search-widget
+              form.search-form(action='#')
+                input(placeholder='Search Posts' name='search' type='text' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'")
+                button(type='submit')
+                  i.fa.fa-search
+            .single-sidebar-widget.user-info-widget
+              img(src='img/blog/user-info.png' alt='')
+              a(href='#')
+                h4 Charlie Barber
+              p
+                | Senior blog writer
+              ul.social-links
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-github
+                li
+                  a(href='#')
+                    i.fa.fa-behance
+              p
+                | Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend
+                | money on boot
+                | camp when you can get. Boot camps have itssuppor ters andits detractors.
+            .single-sidebar-widget.popular-post-widget
+              h4.popular-title Popular Posts
+              .popular-post-list
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp1.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Space The Final Frontier
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp2.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 The Amazing Hubble
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp3.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Astronomy Or Astrology
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp4.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Asteroids telescope
+                    p 02 Hours ago
+            .single-sidebar-widget.ads-widget
+              a(href='#')
+                img.img-fluid(src='img/blog/ads-banner.jpg' alt='')
+            .single-sidebar-widget.post-category-widget
+              h4.category-title Post Catgories
+              ul.cat-list
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Technology
+                    p 37
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Lifestyle
+                    p 24
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Fashion
+                    p 59
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Art
+                    p 29
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Food
+                    p 15
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Architecture
+                    p 09
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Adventure
+                    p 44
+            .single-sidebar-widget.newsletter-widget
+              h4.newsletter-title Newsletter
+              p
+                | Here, I focus on a range of items and features that we use in life without giving them a second thought.
+              .form-group.d-flex.flex-row
+                .col-autos
+                  .input-group
+                    .input-group-prepend
+                      .input-group-text
+                        i.fa.fa-envelope(aria-hidden='true')
+                    input#inlineFormInputGroup.form-control(type='text' placeholder='Enter email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'")
+                a.bbtns(href='#') Subcribe
+              p.text-bottom
+                | You can unsubscribe at any time
+            .single-sidebar-widget.tag-cloud-widget
+              h4.tagcloud-title Tag Clouds
+              ul
+                li
+                  a(href='#') Technology
+                li
+                  a(href='#') Fashion
+                li
+                  a(href='#') Architecture
+                li
+                  a(href='#') Fashion
+                li
+                  a(href='#') Food
+                li
+                  a(href='#') Technology
+                li
+                  a(href='#') Lifestyle
+                li
+                  a(href='#') Art
+                li
+                  a(href='#') Adventure
+                li
+                  a(href='#') Food
+                li
+                  a(href='#') Lifestyle
+                li
+                  a(href='#') Adventure
+  // End post-content Area

@@ -1,0 +1,250 @@
+extends layout
+
+block content
+  //- start banner Area
+  section.home-banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .home-banner-content.col-lg-5
+          h1 Rooftop
+          hr
+          p A Fine Dinning Restaurant
+          
+  //- Left and right banner icon
+  .go-down
+    a(href='#menu_area')
+      img.go-down-img(src='img/go-down.png', alt='')
+  .fixed-view-menu
+    p
+      a(href='menu.html') view menu
+  .fixed-book-table
+    p
+      a(href='index.html') book a table
+
+  //- menu area
+  section#menu_area.menu-area
+    .container
+      .row.align-items-center
+        .col-lg-5.col-md-5
+          .section-title.relative
+            h1
+              | Daily Food 
+              br
+              | 							Courses 
+              br
+              | 							with Drinks
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+            a.primary-btn.text-uppercase(href='#') See Full Menu
+        .col-lg-7.col-md-7
+          .menu-list
+            .single-menu
+              h3 Appetizer
+              ul.list
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+            .single-menu
+              h3 Main Courses
+              ul.list
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+            .single-menu
+              h3 Drinks & Juices
+              ul.list
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham & Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+  //- Gallery area
+  section.gallery-area
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-5.col-sm-6
+          .single-gallery.mt--480
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g1.jpg', alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g1.jpg')
+                span.lnr.lnr-cross
+        .col-lg-5.col-md-6.col-sm-6
+          .single-gallery
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g2.jpg', alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g2.jpg')
+                span.lnr.lnr-cross
+        .offset-lg-1.col-lg-5.col-md-5.col-sm-6
+          .single-gallery.mt--280
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g3.jpg', alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g3.jpg')
+                span.lnr.lnr-cross
+        .col-lg-6.col-md-6.col-sm-6
+          .single-gallery
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g4.jpg', alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g4.jpg')
+                span.lnr.lnr-cross
+
+  //- Reservation Area
+  section.reservation-area
+    .container
+      .row.align-items-center
+        .col-lg-7.col-md-6
+          form#myForm.booking-form(action='/event' method='POST')
+            .row
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='eventName', placeholder='Event Name', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Event Name'", required='', type='text')
+              .input-group.col-lg-6.mb-20
+                input#event_date.form-control.datepicker(name='eventDate', placeholder='Event Date', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Event Date'", required='', type='text')
+                span.input-group-append
+                  button.btn.btn-outline-secondary.border-left-0.border-0(type='button')
+                    i.fa.fa-calendar.reservation-calendar
+              .col-lg-6.d-flex.flex-column.mb-20
+                .nice-select.app-select.form-control(name='eventTime', tabindex='0')
+                  span.current Event Time
+                  ul.list
+                    li.option.selected(data-value='Project you want to donate', data-display='Project you want to donate')
+                      | Meal
+                      | Preferences
+                    li.option(data-value='1') 05pm
+                    li.option(data-value='2') 08pm
+                    li.option(data-value='3') 09pm
+              .col-lg-6.d-flex.flex-column.mb-20
+                .nice-select.app-select.form-control(name='guest',tabindex='0')
+                  span.current Number of guests
+                  ul.list
+                    li.option.selected(data-value='Project you want to donate', data-display='Project you want to donate')
+                      | Number
+                      | of guests
+                    li.option(data-value='1') Number of guests 1
+                    li.option(data-value='2') Number of guests 2
+                    li.option(data-value='3') Number of guests 3
+              .col-lg-6.d-flex.flex-column.mb-20
+                input.form-control(name='budget', placeholder='Budget', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Budget'", required='', type='text')
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='contactName', placeholder='Contact Name', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Contact Name'", required='', type='text')
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='emailAddress', placeholder='Email Address', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Email Address'", required='', type='email')
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='phoneNumber', placeholder='Phone Number', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Phone Number'", required='', type='text')
+              .col-lg-12.d-flex.flex-column
+                textarea.form-control(name='postMessage', placeholder='Post a message', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Post a message'", required='')
+              .col-lg-12.d-flex.justify-content-end
+                button.primary-btn.dark.mt-30.text-uppercase Send Request
+              .alert-msg
+        .offset-lg-1.col-lg-4.col-md-6
+          .section-title.relative
+            h1
+              | Book a 
+              br
+              | 							Table or 
+              br
+              | 							Rooms for 
+              br
+              | 							private 
+              br
+              | 							dining
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+
+  //- Chefs Quotes Area
+  section.chefs-quotes-area
+    .container
+      .row.align-items-center
+        .col-lg-5.col-md-6
+          .section-title.relative
+            h1
+              | Chef’s 
+              br
+              | 							Quotes
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quotes
+            img.img-fluid(src='img/signature.png', alt='')
+        .offset-lg-1.col-lg-6.col-md-6
+          .mt--120
+            img.chef-img.img-fluid(src='img/chefs-quotes.jpg', alt='')
+
+  //- Start Call To Action Area
+  section.container.section-gap-top
+    .callto-action-area.relative
+      .row.d-flex.justify-content-center
+        .col-lg-12.p-0
+          .cta-owl.owl-carousel
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg', alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread & Fries
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg', alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread & Fries
+
+  //- Contact Area
+  section.contact-area.section-gap
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-6
+          #contactMap
+        .offset-lg-1.col-lg-5.col-md-6
+          .section-title.relative
+            h1
+              | Rooftop 
+              br
+              | 							Fine Dinning 
+              br
+              | 							Restaurant 
+              br
+            .mb-40
+              p 432 Wyandotte Ave, Lakewood, OH, 44107
+              p 432 Wyandotte Ave, Lakewood, OH, 44107
+            .mb-40
+              p 012 44 (216) 785-9346
+              p 012 44 (216) 785-9346
+              p 012 44 (216) 785-9346
+            .mail
+              p info@rooftoprestaurant.co.uk
+              p support@rooftoprestaurant.com
+
+  

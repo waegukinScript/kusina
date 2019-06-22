@@ -1,0 +1,117 @@
+extends layout
+
+block content
+
+  // ================ Start banner Area =================
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-5
+          h1 food menu
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') home
+              span.lnr.lnr-arrow-right
+              a(href='menu.html') menu
+  // ================ End banner Area =================
+  // ================ Menu Area =================
+  section#menu_area.menu-area
+    .container
+      .row.align-items-center
+        .col-lg-5.col-md-5
+          .section-title.relative
+            h1
+              | Daily Food 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Courses 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;with Drinks
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+            a.primary-btn.text-uppercase(href='#') See Full Menu
+        .col-lg-7.col-md-7
+          .menu-list
+            .single-menu
+              h3 Appetizer
+              ul.list
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+            .single-menu
+              h3 Main Courses
+              ul.list
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+            .single-menu
+              h3 Drinks &amp; Juices
+              ul.list
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+                li
+                  p.menu-item
+                    | Ham &amp; Potato Sandwiches ........... 
+                    span $25.00
+                  p (French bread baguette, cooked ham, potato salad)
+  // ================End Menu Area =================
+  // ================ Chefs Quotes Area =================
+  section.chefs-quotes-area
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-6
+          .mt--120
+            img.chef-img.img-fluid(src='img/chefs-quotes.jpg' alt='')
+        .offset-lg-1.col-lg-5.col-md-6
+          .section-title.relative
+            h1
+              | Chef&rsquo;s 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Quotes
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quotes
+            img.img-fluid(src='img/signature.png' alt='')
+  // ================ End Chefs Quotes Area =================
+  // ================ Start Call To Action Area =================
+  section.container.section-gap
+    .callto-action-area.relative
+      .row.d-flex.justify-content-center
+        .col-lg-12.p-0
+          .cta-owl.owl-carousel
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg' alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread &amp; Fries
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg' alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread &amp; Fries
+  // ================ End Call To Action Area =================

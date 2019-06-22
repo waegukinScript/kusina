@@ -1,0 +1,696 @@
+doctype html
+head
+  // Mobile Specific Meta
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Favicon
+  link(rel='shortcut icon' href='img/fav.png')
+  // Author Meta
+  meta(name='author' content='CodePixar')
+  // Meta Description
+  meta(name='description' content='')
+  // Meta Keyword
+  meta(name='keywords' content='')
+  // meta character set
+  meta(charset='UTF-8')
+  // Site Title
+  title Elements
+  link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500' rel='stylesheet')
+  //
+    CSS
+    =============================================
+  link(rel='stylesheet' href='css/linearicons.css')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/availability-calendar.css')
+  link(rel='stylesheet' href='css/magnific-popup.css')
+  link(rel='stylesheet' href='css/nice-select.css')
+  link(rel='stylesheet' href='css/owl.carousel.css')
+  link(rel='stylesheet' href='css/bootstrap.css')
+  link(rel='stylesheet' href='css/bootstrap-datepicker.css')
+  link(rel='stylesheet' href='css/main.css')
+// ================ Start Header Area =================
+header.header-area
+  .container
+    .header-wrap
+      .header-top.d-flex.justify-content-between.align-items-center.navbar-expand-md
+        .col.menu-left
+          a(href='index.html') Home
+          a(href='menu.html') menu
+          a(href='about.html') about
+        .col-3.logo
+          a(href='index.html')
+            img.mx-auto(src='img/logo.png' alt='')
+        nav.col.navbar.navbar-expand-md.justify-content-end
+          // Toggler/collapsibe Button
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+            span.lnr.lnr-menu
+          // Navbar links
+          #collapsibleNavbar.collapse.navbar-collapse.menu-right
+            ul.navbar-nav.justify-content-center.w-100
+              li.nav-item.hide-lg
+                a.nav-link(href='index.html') Home
+              li.nav-item.hide-lg
+                a.nav-link(href='menu.html') menu
+              li.nav-item.hide-lg
+                a.nav-link(href='about.html') about
+              // Dropdown
+              li.nav-item.dropdown
+                a#navbardrop.nav-link.dropdown-toggle.active(href='#' data-toggle='dropdown')
+                  | Pages
+                .dropdown-menu
+                  a.dropdown-item(href='contact.html') Contact
+                  a.dropdown-item(href='elements.html') Elements
+              li.nav-item.dropdown
+                a#navbardrop.nav-link.dropdown-toggle(href='#' data-toggle='dropdown')
+                  | Blog
+                .dropdown-menu
+                  a.dropdown-item(href='blog-home.html') Blog
+                  a.dropdown-item(href='blog-single.html') Blog Detail
+              li.nav-item
+                a.nav-link(href='gallery.html') Gallery
+// ================ End Header Area =================
+// ================ Start banner Area =================
+section.banner-area.relative
+  .container
+    .row.height.align-items-center.justify-content-center
+      .banner-content.col-lg-5
+        h1 Elements
+        hr
+        .breadcrmb
+          p
+            a(href='index.html') home
+            span.lnr.lnr-arrow-right
+            a(href='elements.html') elements
+// ================ End banner Area =================
+// Start Sample Area
+section.sample-text-area
+  .container
+    h3.text-heading Text Sample
+    p.sample-text
+      | Every avid independent filmmaker has 
+      b Bold
+      |  about making that 
+      i Italic
+      |  interest documentary, or short
+      | &#x9;&#x9;&#x9;&#x9;film
+      | &#x9;&#x9;&#x9;&#x9;to show off their creative prowess. Many have great ideas and want to &ldquo;wow&rdquo; the
+      sup Superscript
+      |  scene, or
+      | &#x9;&#x9;&#x9;&#x9;video
+      | &#x9;&#x9;&#x9;&#x9;renters with their big project. But once you have the
+      sub Subscript
+      |  &ldquo;in the can&rdquo; (no easy feat), how do you
+      | &#x9;&#x9;&#x9;&#x9;move
+      | &#x9;&#x9;&#x9;&#x9;from a 
+      del Strike
+      |  through of master DVDs with the 
+      u &ldquo;Underline&rdquo;
+      |  marked hand-written title inside a
+      | &#x9;&#x9;&#x9;&#x9;secondhand
+      | &#x9;&#x9;&#x9;&#x9;CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting
+      | &#x9;&#x9;&#x9;&#x9;on
+      | &#x9;&#x9;&#x9;&#x9;your doorstep? You need to create eye-popping artwork and have your project replicated. Using a reputable full
+      | &#x9;&#x9;&#x9;&#x9;service
+      | &#x9;&#x9;&#x9;&#x9;DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a
+      | &#x9;&#x9;&#x9;&#x9;professional
+      | &#x9;&#x9;&#x9;&#x9;end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication
+      | &#x9;&#x9;&#x9;&#x9;results:
+// End Sample Area
+// Start Button
+section.button-area
+  .container.border-top-generic
+    h3.text-heading Sample Buttons
+    .button-group-area
+      a.genric-btn.default(href='#') Default
+      a.genric-btn.primary(href='#') Primary
+      a.genric-btn.success(href='#') Success
+      a.genric-btn.info(href='#') Info
+      a.genric-btn.warning(href='#') Warning
+      a.genric-btn.danger(href='#') Danger
+      a.genric-btn.link(href='#') Link
+      a.genric-btn.disable(href='#') Disable
+    .button-group-area.mt-10
+      a.genric-btn.default-border(href='#') Default
+      a.genric-btn.primary-border(href='#') Primary
+      a.genric-btn.success-border(href='#') Success
+      a.genric-btn.info-border(href='#') Info
+      a.genric-btn.warning-border(href='#') Warning
+      a.genric-btn.danger-border(href='#') Danger
+      a.genric-btn.link-border(href='#') Link
+      a.genric-btn.disable(href='#') Disable
+    .button-group-area.mt-40
+      a.genric-btn.default.radius(href='#') Default
+      a.genric-btn.primary.radius(href='#') Primary
+      a.genric-btn.success.radius(href='#') Success
+      a.genric-btn.info.radius(href='#') Info
+      a.genric-btn.warning.radius(href='#') Warning
+      a.genric-btn.danger.radius(href='#') Danger
+      a.genric-btn.link.radius(href='#') Link
+      a.genric-btn.disable.radius(href='#') Disable
+    .button-group-area.mt-10
+      a.genric-btn.default-border.radius(href='#') Default
+      a.genric-btn.primary-border.radius(href='#') Primary
+      a.genric-btn.success-border.radius(href='#') Success
+      a.genric-btn.info-border.radius(href='#') Info
+      a.genric-btn.warning-border.radius(href='#') Warning
+      a.genric-btn.danger-border.radius(href='#') Danger
+      a.genric-btn.link-border.radius(href='#') Link
+      a.genric-btn.disable.radius(href='#') Disable
+    .button-group-area.mt-40
+      a.genric-btn.default.circle(href='#') Default
+      a.genric-btn.primary.circle(href='#') Primary
+      a.genric-btn.success.circle(href='#') Success
+      a.genric-btn.info.circle(href='#') Info
+      a.genric-btn.warning.circle(href='#') Warning
+      a.genric-btn.danger.circle(href='#') Danger
+      a.genric-btn.link.circle(href='#') Link
+      a.genric-btn.disable.circle(href='#') Disable
+    .button-group-area.mt-10
+      a.genric-btn.default-border.circle(href='#') Default
+      a.genric-btn.primary-border.circle(href='#') Primary
+      a.genric-btn.success-border.circle(href='#') Success
+      a.genric-btn.info-border.circle(href='#') Info
+      a.genric-btn.warning-border.circle(href='#') Warning
+      a.genric-btn.danger-border.circle(href='#') Danger
+      a.genric-btn.link-border.circle(href='#') Link
+      a.genric-btn.disable.circle(href='#') Disable
+    .button-group-area.mt-40
+      a.genric-btn.default.circle.arrow(href='#')
+        | Default
+        span.lnr.lnr-arrow-right
+      a.genric-btn.primary.circle.arrow(href='#')
+        | Primary
+        span.lnr.lnr-arrow-right
+      a.genric-btn.success.circle.arrow(href='#')
+        | Success
+        span.lnr.lnr-arrow-right
+      a.genric-btn.info.circle.arrow(href='#')
+        | Info
+        span.lnr.lnr-arrow-right
+      a.genric-btn.warning.circle.arrow(href='#')
+        | Warning
+        span.lnr.lnr-arrow-right
+      a.genric-btn.danger.circle.arrow(href='#')
+        | Danger
+        span.lnr.lnr-arrow-right
+    .button-group-area.mt-10
+      a.genric-btn.default-border.circle.arrow(href='#')
+        | Default
+        span.lnr.lnr-arrow-right
+      a.genric-btn.primary-border.circle.arrow(href='#')
+        | Primary
+        span.lnr.lnr-arrow-right
+      a.genric-btn.success-border.circle.arrow(href='#')
+        | Success
+        span.lnr.lnr-arrow-right
+      a.genric-btn.info-border.circle.arrow(href='#')
+        | Info
+        span.lnr.lnr-arrow-right
+      a.genric-btn.warning-border.circle.arrow(href='#')
+        | Warning
+        span.lnr.lnr-arrow-right
+      a.genric-btn.danger-border.circle.arrow(href='#')
+        | Danger
+        span.lnr.lnr-arrow-right
+    .button-group-area.mt-40
+      a.genric-btn.primary.e-large(href='#') Extra Large
+      a.genric-btn.success.large(href='#') Large
+      a.genric-btn.primary(href='#') Default
+      a.genric-btn.success.medium(href='#') Medium
+      a.genric-btn.primary.small(href='#') Small
+    .button-group-area.mt-10
+      a.genric-btn.primary-border.e-large(href='#') Extra Large
+      a.genric-btn.success-border.large(href='#') Large
+      a.genric-btn.primary-border(href='#') Default
+      a.genric-btn.success-border.medium(href='#') Medium
+      a.genric-btn.primary-border.small(href='#') Small
+// End Button
+// Start Align Area
+section.whole-wrap
+  .container
+    .section-top-border
+      h3.mb-30 Left Aligned
+      .row
+        .col-md-3
+          img.img-fluid(src='img/elements/d.jpg' alt='')
+        .col-md-9.mt-sm-20.left-align-p
+          p
+            | Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+            | transfer
+            | money to them through any US bank or payment system. As a result of this law, most of the popular online casino
+            | networks
+            | such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves
+            | being
+            | chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and
+            | new
+            | online casinos started taking root. These began to operate under a different business umbrella, and by doing
+            | that,
+            | rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking
+            | systems
+            | that would accept this new clarification and start doing business with me. Listed in this article are the
+            | electronic
+            | banking systems that accept players from the United States that wish to play in online casinos.
+    .section-top-border.text-right
+      h3.mb-30 Right Aligned
+      .row
+        .col-md-9
+          p.text-right
+            | Over time, even the most sophisticated, memory packed computer can begin to run slow if we
+            | don&rsquo;t
+            | do something to prevent it. The reason why has less to do with how computers are made and how they age and more
+            | to
+            | do with the way we use them. You see, all of the daily tasks that we do on our PC from running programs to
+            | downloading
+            | and deleting software can make our computer sluggish. To keep this from happening, you need to understand the
+            | reasons
+            | why your PC is getting slower and do something to keep your PC running at its best. You can do this through
+            | regular
+            | maintenance and PC performance optimization programs
+          p.text-right
+            | Before we discuss all of the things that could be affecting your PC&rsquo;s performance, let&rsquo;s
+            | talk
+            | a little about what symptoms
+        .col-md-3
+          img.img-fluid(src='img/elements/d.jpg' alt='')
+    .section-top-border
+      h3.mb-30 Definition
+      .row
+        .col-md-4
+          .single-defination
+            h4.mb-20 Definition 01
+            p
+              | Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+              | transfer
+              | money to them through any US bank or payment system. As a result of this law, most of the popular online casino
+              | networks
+        .col-md-4
+          .single-defination
+            h4.mb-20 Definition 02
+            p
+              | Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+              | transfer
+              | money to them through any US bank or payment system. As a result of this law, most of the popular online casino
+              | networks
+        .col-md-4
+          .single-defination
+            h4.mb-20 Definition 03
+            p
+              | Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+              | transfer
+              | money to them through any US bank or payment system. As a result of this law, most of the popular online casino
+              | networks
+    .section-top-border
+      h3.mb-30 Block Quotes
+      .row
+        .col-lg-12
+          blockquote.generic-blockquote
+            | &ldquo;Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+            | transfer money
+            | to them through any US bank or payment system. As a result of this law, most of the popular online casino
+            | networks
+            | such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves
+            | being
+            | chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and
+            | new
+            | online casinos started taking root. These began to operate under a different business umbrella, and by doing
+            | that,
+            | rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking
+            | systems
+            | that would accept this new clarification and start doing business with me. Listed in this article are the
+            | electronic
+            | banking&rdquo;
+    .section-top-border
+      h3.mb-30 Table
+      .progress-table-wrap
+        .progress-table
+          .table-head
+            .serial #
+            .country Countries
+            .visit Visits
+            .percentage Percentages
+          .table-row
+            .serial 01
+            .country
+              img(src='img/elements/f1.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-1(role='progressbar' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 02
+            .country
+              img(src='img/elements/f2.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-2(role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 03
+            .country
+              img(src='img/elements/f3.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-3(role='progressbar' style='width: 55%' aria-valuenow='55' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 04
+            .country
+              img(src='img/elements/f4.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-4(role='progressbar' style='width: 60%' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 05
+            .country
+              img(src='img/elements/f5.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-5(role='progressbar' style='width: 40%' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 06
+            .country
+              img(src='img/elements/f6.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-6(role='progressbar' style='width: 70%' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 07
+            .country
+              img(src='img/elements/f7.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-7(role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100')
+          .table-row
+            .serial 08
+            .country
+              img(src='img/elements/f8.jpg' alt='flag')
+              | Canada
+            .visit 645032
+            .percentage
+              .progress
+                .progress-bar.color-8(role='progressbar' style='width: 60%' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100')
+    .section-top-border
+      h3 Image Gallery
+      .row.gallery-item
+        .col-md-4
+          a.img-gal(href='img/elements/g1.jpg')
+            .single-gallery-image(style='background: url(img/elements/g1.jpg);')
+        .col-md-4
+          a.img-gal(href='img/elements/g2.jpg')
+            .single-gallery-image(style='background: url(img/elements/g2.jpg);')
+        .col-md-4
+          a.img-gal(href='img/elements/g3.jpg')
+            .single-gallery-image(style='background: url(img/elements/g3.jpg);')
+        .col-md-6
+          a.img-gal(href='img/elements/g4.jpg')
+            .single-gallery-image(style='background: url(img/elements/g4.jpg);')
+        .col-md-6
+          a.img-gal(href='img/elements/g5.jpg')
+            .single-gallery-image(style='background: url(img/elements/g5.jpg);')
+        .col-md-4
+          a.img-gal(href='img/elements/g6.jpg')
+            .single-gallery-image(style='background: url(img/elements/g6.jpg);')
+        .col-md-4
+          a.img-gal(href='img/elements/g7.jpg')
+            .single-gallery-image(style='background: url(img/elements/g7.jpg);')
+        .col-md-4
+          a.img-gal(href='img/elements/g8.jpg')
+            .single-gallery-image(style='background: url(img/elements/g8.jpg);')
+    .section-top-border
+      .row
+        .col-md-4.typo-sec
+          h3.mb-20 Typography
+          .typography
+            h1.typo-list This is header 01
+            h2.typo-list This is header 02
+            h3.typo-list This is header 03
+            h4.typo-list This is header 04
+            h5.typo-list This is header 01
+            h6.typo-list This is header 01
+        .col-md-4.mt-sm-30.typo-sec
+          h3.mb-20 Unordered List
+          div
+            ul.unordered-list
+              li Fta Keys
+              li For Women Only Your Computer Usage
+              li
+                | Facts Why Inkjet Printing Is Very Appealing
+                ul
+                  li
+                    | Addiction When Gambling Becomes
+                    ul
+                      li Protective Preventative Maintenance
+              li Dealing With Technical Support 10 Useful Tips
+              li Make Myspace Your Best Designed Space
+              li Cleaning And Organizing Your Computer
+        .col-md-4.mt-sm-30.typo-sec
+          h3.mb-20 Ordered List
+          div
+            ol.ordered-list
+              li
+                span Fta Keys
+              li
+                span For Women Only Your Computer Usage
+              li
+                span Facts Why Inkjet Printing Is Very Appealing
+                ol.ordered-list-alpha
+                  li
+                    span Addiction When Gambling Becomes
+                    ol.ordered-list-roman
+                      li
+                        span Protective Preventative Maintenance
+              li
+                span Dealing With Technical Support 10 Useful Tips
+              li
+                span Make Myspace Your Best Designed Space
+              li
+                span Cleaning And Organizing Your Computer
+    .section-top-border
+      .row
+        .col-lg-8.col-md-8
+          h3.mb-30 Form Element
+          form(action='#')
+            .mt-10
+              input.single-input(type='text' name='first_name' placeholder='First Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required='')
+            .mt-10
+              input.single-input(type='text' name='last_name' placeholder='Last Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required='')
+            .mt-10
+              input.single-input(type='text' name='last_name' placeholder='Last Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required='')
+            .mt-10
+              input.single-input(type='email' name='EMAIL' placeholder='Email address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required='')
+            .input-group-icon.mt-10
+              .icon
+                i.fa.fa-thumb-tack(aria-hidden='true')
+              input.single-input(type='text' name='address' placeholder='Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required='')
+            .input-group-icon.mt-10
+              .icon
+                i.fa.fa-plane(aria-hidden='true')
+              #default-select.form-select
+                select
+                  option(value='1') City
+                  option(value='1') Dhaka
+                  option(value='1') Dilli
+                  option(value='1') Newyork
+                  option(value='1') Islamabad
+            .input-group-icon.mt-10
+              .icon
+                i.fa.fa-globe(aria-hidden='true')
+              #default-select2.form-select
+                select
+                  option(value='1') Country
+                  option(value='1') Bangladesh
+                  option(value='1') India
+                  option(value='1') England
+                  option(value='1') Srilanka
+            .mt-10
+              textarea.single-textarea(placeholder='Message' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required='')
+            .mt-10
+              input.single-input-primary(type='text' name='first_name' placeholder='Primary color' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primary color'" required='')
+            .mt-10
+              input.single-input-accent(type='text' name='first_name' placeholder='Accent color' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Accent color'" required='')
+            .mt-10
+              input.single-input-secondary(type='text' name='first_name' placeholder='Secondary color' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary color'" required='')
+        .col-lg-3.col-md-4.mt-sm-30.element-wrap
+          .single-element-widget
+            h3.mb-30 Switches
+            .switch-wrap.d-flex.justify-content-between
+              p 01. Sample Switch
+              .primary-switch
+                input#default-switch(type='checkbox')
+                label(for='default-switch')
+            .switch-wrap.d-flex.justify-content-between
+              p 02. Primary Color Switch
+              .primary-switch
+                input#primary-switch(type='checkbox' checked='')
+                label(for='primary-switch')
+            .switch-wrap.d-flex.justify-content-between
+              p 03. Confirm Color Switch
+              .confirm-switch
+                input#confirm-switch(type='checkbox' checked='')
+                label(for='confirm-switch')
+          .single-element-widget
+            h3.mb-30 Selectboxes
+            #default-select.default-select
+              select
+                option(value='1') English
+                option(value='1') Spanish
+                option(value='1') Arabic
+                option(value='1') Portuguise
+                option(value='1') Bengali
+          .single-element-widget
+            h3.mb-30 Checkboxes
+            .switch-wrap.d-flex.justify-content-between
+              p 01. Sample Checkbox
+              .primary-checkbox
+                input#default-checkbox(type='checkbox')
+                label(for='default-checkbox')
+            .switch-wrap.d-flex.justify-content-between
+              p 02. Primary Color Checkbox
+              .primary-checkbox
+                input#primary-checkbox(type='checkbox' checked='')
+                label(for='primary-checkbox')
+            .switch-wrap.d-flex.justify-content-between
+              p 03. Confirm Color Checkbox
+              .confirm-checkbox
+                input#confirm-checkbox(type='checkbox')
+                label(for='confirm-checkbox')
+            .switch-wrap.d-flex.justify-content-between
+              p 04. Disabled Checkbox
+              .disabled-checkbox
+                input#disabled-checkbox(type='checkbox' disabled='')
+                label(for='disabled-checkbox')
+            .switch-wrap.d-flex.justify-content-between
+              p 05. Disabled Checkbox active
+              .disabled-checkbox
+                input#disabled-checkbox-active(type='checkbox' checked='' disabled='')
+                label(for='disabled-checkbox-active')
+          .single-element-widget
+            h3.mb-30 Radios
+            .switch-wrap.d-flex.justify-content-between
+              p 01. Sample radio
+              .primary-radio
+                input#default-radio(type='checkbox')
+                label(for='default-radio')
+            .switch-wrap.d-flex.justify-content-between
+              p 02. Primary Color radio
+              .primary-radio
+                input#primary-radio(type='checkbox' checked='')
+                label(for='primary-radio')
+            .switch-wrap.d-flex.justify-content-between
+              p 03. Confirm Color radio
+              .confirm-radio
+                input#confirm-radio(type='checkbox' checked='')
+                label(for='confirm-radio')
+            .switch-wrap.d-flex.justify-content-between
+              p 04. Disabled radio
+              .disabled-radio
+                input#disabled-radio(type='checkbox' disabled='')
+                label(for='disabled-radio')
+            .switch-wrap.d-flex.justify-content-between
+              p 05. Disabled radio active
+              .disabled-radio
+                input#disabled-radio-active(type='checkbox' checked='' disabled='')
+                label(for='disabled-radio-active')
+// End Align Area
+// ================ Start Footer Area =================
+footer.footer-area.section-gap
+  .container
+    .row
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Top Products
+          ul
+            li
+              a(href='#') Managed Website
+            li
+              a(href='#') Manage Reputation
+            li
+              a(href='#') Power Tools
+            li
+              a(href='#') Marketing Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Quick links
+          ul
+            li
+              a(href='#') Jobs
+            li
+              a(href='#') Brand Assets
+            li
+              a(href='#') Investor Relations
+            li
+              a(href='#') Terms of Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Features
+          ul
+            li
+              a(href='#') Jobs
+            li
+              a(href='#') Brand Assets
+            li
+              a(href='#') Investor Relations
+            li
+              a(href='#') Terms of Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Resources
+          ul
+            li
+              a(href='#') Guides
+            li
+              a(href='#') Research
+            li
+              a(href='#') Experts
+            li
+              a(href='#') Agencies
+      .col-lg-4.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Newsletter
+          p Stay update with our latest
+          #mc_embed_signup
+            form(target='_blank' action='https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01' method='get')
+              .input-group
+                input.form-control(type='text' name='EMAIL' placeholder='Enter Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required='')
+                .input-group-btn
+                  button.btn.btn-default(type='submit')
+                    span.lnr.lnr-arrow-right
+                .info
+    .footer-bottom.row.align-items-center.justify-content-between
+      p.footer-text.m-0.col-lg-6.col-md-12
+        | Copyright &copy; 2018 All rights reserved | This template is made with
+        span.lnr.lnr-heart
+        |  by 
+        a(href='#') Colorlib
+      .col-lg-6.col-sm-12.footer-social
+        a(href='#')
+          i.fa.fa-facebook
+        a(href='#')
+          i.fa.fa-twitter
+        a(href='#')
+          i.fa.fa-dribbble
+        a(href='#')
+          i.fa.fa-behance
+// ================ End Footer Area =================
+script(src='js/vendor/jquery-2.2.4.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js' integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4' crossorigin='anonymous')
+script(src='js/vendor/bootstrap.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.sticky.js')
+script(src='js/parallax.min.js')
+script(src='js/jquery.nice-select.min.js')
+script(src='js/jquery.ajaxchimp.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA')
+script(src='js/bootstrap-datepicker.js')
+script(src='js/main.js')

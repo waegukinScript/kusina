@@ -1,0 +1,55 @@
+extends layout
+
+block content
+
+
+  // ================ Start banner Area =================
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-6
+          h1 image gallery
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') home
+              span.lnr.lnr-arrow-right
+              a(href='gallery.html') gallery
+  // ================ End banner Area =================
+  // ================ Gallery Area =================
+  section.gallery-area.section-gap.mt-172
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-5.col-sm-6
+          .single-gallery.mt--350
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g1.jpg' alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g1.jpg')
+                span.lnr.lnr-cross
+        .col-lg-5.col-md-6.col-sm-6
+          .single-gallery
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g2.jpg' alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g2.jpg')
+                span.lnr.lnr-cross
+        .offset-lg-1.col-lg-5.col-md-5.col-sm-6
+          .single-gallery.mt--155
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g3.jpg' alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g3.jpg')
+                span.lnr.lnr-cross
+        .col-lg-6.col-md-6.col-sm-6
+          .single-gallery
+            .overlay
+            figure
+              img.img-fluid.w-100(src='img/gallery/g4.jpg' alt='')
+            .icon
+              a.photo-gallery-pop-up(href='img/gallery/g4.jpg')
+                span.lnr.lnr-cross
+  // ================ End Gallery Area =================

@@ -1,0 +1,158 @@
+extends layout
+
+block content
+
+  // ================ Start banner Area =================
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-6
+          h1 about us
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') home
+              span.lnr.lnr-arrow-right
+              a(href='about.html') about
+  // ================ End banner Area =================
+  // ================ About Area =================
+  section.about-area.section-gap-top
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-6
+          div
+            img.img-fluid(src='img/about-img.jpg' alt='')
+        .offset-lg-1.col-lg-5.col-md-6
+          .section-title.relative
+            h1
+              | About 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Rooftop 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dinning
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  // ================ End About Area =================
+  // ================ Start Call To Action Area =================
+  section.container.section-gap-top
+    .callto-action-area.relative
+      .row.d-flex.justify-content-center
+        .col-lg-12.p-0
+          .cta-owl.owl-carousel
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg' alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread &amp; Fries
+            .item
+              .cta-img
+                img.img-fluid(src='img/callaction-bg.jpg' alt='')
+              .text-box.text-center
+                h3.mb-10 Main Course
+                p
+                  | Chicken Steak with gerlic bread &amp; Fries
+  // ================ End Call To Action Area =================
+  // ================ Chefs Quotes Area =================
+  section.chefs-quotes-area.section-gap
+    .container
+      .row.align-items-center
+        .col-lg-5
+          .section-title.relative
+            h1
+              | Chef&rsquo;s 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Quotes
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quotes
+            img.img-fluid(src='img/signature.png' alt='')
+        .offset-lg-1.col-lg-6.col-md-6
+          div
+            img.chef-img(src='img/chefs-quotes.jpg' alt='')
+  // ================ End Chefs Quotes Area =================
+  // ================ Start Footer Area =================
+  footer.footer-area.section-gap
+    .container
+      .row
+        .col-lg-2.col-md-6.col-sm-6
+          .single-footer-widget
+            h4 Top Products
+            ul
+              li
+                a(href='#') Managed Website
+              li
+                a(href='#') Manage Reputation
+              li
+                a(href='#') Power Tools
+              li
+                a(href='#') Marketing Service
+        .col-lg-2.col-md-6.col-sm-6
+          .single-footer-widget
+            h4 Quick links
+            ul
+              li
+                a(href='#') Jobs
+              li
+                a(href='#') Brand Assets
+              li
+                a(href='#') Investor Relations
+              li
+                a(href='#') Terms of Service
+        .col-lg-2.col-md-6.col-sm-6
+          .single-footer-widget
+            h4 Features
+            ul
+              li
+                a(href='#') Jobs
+              li
+                a(href='#') Brand Assets
+              li
+                a(href='#') Investor Relations
+              li
+                a(href='#') Terms of Service
+        .col-lg-2.col-md-6.col-sm-6
+          .single-footer-widget
+            h4 Resources
+            ul
+              li
+                a(href='#') Guides
+              li
+                a(href='#') Research
+              li
+                a(href='#') Experts
+              li
+                a(href='#') Agencies
+        .col-lg-4.col-md-6.col-sm-6
+          .single-footer-widget
+            h4 Newsletter
+            p Stay update with our latest
+            #mc_embed_signup
+              form(target='_blank' action='https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01' method='get')
+                .input-group
+                  input.form-control(type='text' name='EMAIL' placeholder='Enter Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required='')
+                  .input-group-btn
+                    button.btn.btn-default(type='submit')
+                      span.lnr.lnr-arrow-right
+                  .info
+      .footer-bottom.row.align-items-center.justify-content-between
+        p.footer-text.m-0.col-lg-6.col-md-12
+          | Copyright &copy; 2018 All rights reserved | This template is made with
+          span.lnr.lnr-heart
+          |  by 
+          a(href='#') Colorlib
+        .col-lg-6.col-sm-12.footer-social
+          a(href='#')
+            i.fa.fa-facebook
+          a(href='#')
+            i.fa.fa-twitter
+          a(href='#')
+            i.fa.fa-dribbble
+          a(href='#')
+            i.fa.fa-behance

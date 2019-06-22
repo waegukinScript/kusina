@@ -1,0 +1,214 @@
+doctype html
+head
+  // Mobile Specific Meta
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Favicon
+  link(rel='shortcut icon' href='img/fav.png')
+  // Author Meta
+  meta(name='author' content='CodePixar')
+  // Meta Description
+  meta(name='description' content='')
+  // Meta Keyword
+  meta(name='keywords' content='')
+  // meta character set
+  meta(charset='UTF-8')
+  // Site Title
+  title Contact
+  link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500' rel='stylesheet')
+  //
+    CSS
+    =============================================
+  link(rel='stylesheet' href='css/linearicons.css')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/availability-calendar.css')
+  link(rel='stylesheet' href='css/magnific-popup.css')
+  link(rel='stylesheet' href='css/nice-select.css')
+  link(rel='stylesheet' href='css/owl.carousel.css')
+  link(rel='stylesheet' href='css/bootstrap.css')
+  link(rel='stylesheet' href='css/bootstrap-datepicker.css')
+  link(rel='stylesheet' href='css/main.css')
+// ================ Start Header Area =================
+header.header-area
+  .container
+    .header-wrap
+      .header-top.d-flex.justify-content-between.align-items-center.navbar-expand-md
+        .col.menu-left
+          a(href='index.html') Home
+          a(href='menu.html') menu
+          a(href='about.html') about
+        .col-3.logo
+          a(href='index.html')
+            img.mx-auto(src='img/logo.png' alt='')
+        nav.col.navbar.navbar-expand-md.justify-content-end
+          // Toggler/collapsibe Button
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+            span.lnr.lnr-menu
+          // Navbar links
+          #collapsibleNavbar.collapse.navbar-collapse.menu-right
+            ul.navbar-nav.justify-content-center.w-100
+              li.nav-item.hide-lg
+                a.nav-link(href='index.html') Home
+              li.nav-item.hide-lg
+                a.nav-link(href='menu.html') menu
+              li.nav-item.hide-lg
+                a.nav-link(href='about.html') about
+              // Dropdown
+              li.nav-item.dropdown
+                a#navbardrop.nav-link.dropdown-toggle.active(href='#' data-toggle='dropdown')
+                  | Pages
+                .dropdown-menu
+                  a.dropdown-item(href='contact.html') Contact
+                  a.dropdown-item(href='elements.html') Elements
+              li.nav-item.dropdown
+                a#navbardrop.nav-link.dropdown-toggle(href='#' data-toggle='dropdown')
+                  | Blog
+                .dropdown-menu
+                  a.dropdown-item(href='blog-home.html') Blog
+                  a.dropdown-item(href='blog-single.html') Blog Detail
+              li.nav-item
+                a.nav-link(href='gallery.html') Gallery
+// ================ End Header Area =================
+// ================ Start banner Area =================
+section.banner-area.relative
+  .container
+    .row.height.align-items-center.justify-content-center
+      .banner-content.col-lg-6
+        h1 contact us
+        hr
+        .breadcrmb
+          p
+            a(href='index.html') home
+            span.lnr.lnr-arrow-right
+            a(href='contact.html') contact
+// ================ End banner Area =================
+// ================ Contact Area =================
+section.contact-area.section-gap
+  .container
+    .row.align-items-start
+      .col-lg-6.col-md-6
+        #contactMap
+      .offset-lg-1.col-lg-5.col-md-6
+        .section-title.relative
+          h1
+            | Rooftop 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Fine Dinning 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Restaurant 
+            br
+          .mb-20
+            p 432 Wyandotte Ave, Lakewood, OH, 44107
+            p 432 Wyandotte Ave, Lakewood, OH, 44107
+          .mb-20
+            p 012 44 (216) 785-9346
+            p 012 44 (216) 785-9346
+            p 012 44 (216) 785-9346
+          .mail
+            p info@rooftoprestaurant.co.uk
+            p support@rooftoprestaurant.com
+        form#myForm.contact-form(action='')
+          .row
+            .col-lg-12.d-flex.flex-column.mb-20
+              input.form-control(name='contact-name' placeholder='Contact Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Name'" required='' type='text')
+            .col-lg-12.d-flex.flex-column.mb-20
+              input.form-control(name='email-address' placeholder='Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required='' type='email')
+            .col-lg-12.d-flex.flex-column.mb-20
+              input.form-control(name='phone-number' placeholder='Phone Number' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required='' type='text')
+            .col-lg-12.d-flex.flex-column
+              textarea.form-control(name='post-message' placeholder='Post a message' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Post a message'" required='')
+            .col-lg-12.d-flex.justify-content-end
+              button.primary-btn.mt-30.text-uppercase Send Message
+            .alert-msg
+// ================ End Contact Area =================
+// ================ Start Footer Area =================
+footer.footer-area.section-gap
+  .container
+    .row
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Top Products
+          ul
+            li
+              a(href='#') Managed Website
+            li
+              a(href='#') Manage Reputation
+            li
+              a(href='#') Power Tools
+            li
+              a(href='#') Marketing Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Quick links
+          ul
+            li
+              a(href='#') Jobs
+            li
+              a(href='#') Brand Assets
+            li
+              a(href='#') Investor Relations
+            li
+              a(href='#') Terms of Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Features
+          ul
+            li
+              a(href='#') Jobs
+            li
+              a(href='#') Brand Assets
+            li
+              a(href='#') Investor Relations
+            li
+              a(href='#') Terms of Service
+      .col-lg-2.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Resources
+          ul
+            li
+              a(href='#') Guides
+            li
+              a(href='#') Research
+            li
+              a(href='#') Experts
+            li
+              a(href='#') Agencies
+      .col-lg-4.col-md-6.col-sm-6
+        .single-footer-widget
+          h4 Newsletter
+          p Stay update with our latest
+          #mc_embed_signup
+            form(target='_blank' action='https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01' method='get')
+              .input-group
+                input.form-control(type='text' name='EMAIL' placeholder='Enter Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required='')
+                .input-group-btn
+                  button.btn.btn-default(type='submit')
+                    span.lnr.lnr-arrow-right
+                .info
+    .footer-bottom.row.align-items-center.justify-content-between
+      p.footer-text.m-0.col-lg-6.col-md-12
+        | Copyright &copy; 2018 All rights reserved | This template is made with
+        span.lnr.lnr-heart
+        |  by 
+        a(href='#') Colorlib
+      .col-lg-6.col-sm-12.footer-social
+        a(href='#')
+          i.fa.fa-facebook
+        a(href='#')
+          i.fa.fa-twitter
+        a(href='#')
+          i.fa.fa-dribbble
+        a(href='#')
+          i.fa.fa-behance
+// ================ End Footer Area =================
+script(src='js/vendor/jquery-2.2.4.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js' integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4' crossorigin='anonymous')
+script(src='js/vendor/bootstrap.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.sticky.js')
+script(src='js/parallax.min.js')
+script(src='js/jquery.nice-select.min.js')
+script(src='js/jquery.ajaxchimp.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA')
+script(src='js/bootstrap-datepicker.js')
+script(src='js/main.js')

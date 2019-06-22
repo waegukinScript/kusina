@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-6
+          h1 contact us
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') home
+              span.lnr.lnr-arrow-right
+              a(href='contact.html') contact
+
+  section.contact-area.section-gap
+    .container
+      .row.align-items-start
+        .col-lg-6.col-md-6
+          #contactMap
+        .offset-lg-1.col-lg-5.col-md-6
+          .section-title.relative
+            h1
+              | Rooftop 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Fine Dinning 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Restaurant 
+              br
+            .mb-20
+              p 432 Wyandotte Ave, Lakewood, OH, 44107
+              p 432 Wyandotte Ave, Lakewood, OH, 44107
+            .mb-20
+              p 012 44 (216) 785-9346
+              p 012 44 (216) 785-9346
+              p 012 44 (216) 785-9346
+            .mail
+              p info@rooftoprestaurant.co.uk
+              p support@rooftoprestaurant.com
+          form#myForm.contact-form(action='/contact' method='POST')
+            .row
+              .col-lg-12.d-flex.flex-column.mb-20
+                input(type='hidden', name='_csrf', value=_csrf)
+                input.form-control(name='contactName' placeholder='Contact Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Name'" required='' type='text')
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='emailAddress' placeholder='Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required='' type='email')
+              .col-lg-12.d-flex.flex-column.mb-20
+                input.form-control(name='phoneNumber' placeholder='Phone Number' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required='' type='text')
+              .col-lg-12.d-flex.flex-column
+                textarea.form-control(name='postMessage' placeholder='Post a message' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Post a message'" required='')
+              .col-lg-12.d-flex.justify-content-end
+                button.primary-btn.mt-30.text-uppercase Send Message1
+              .alert-msg
+  //- .pb-2.mt-2.mb-4.border-bottom
+  //-   h3 Contact Form
+
+  //- form(method='POST')
+  //-   input(type='hidden', name='_csrf', value=_csrf)
+  //-   if (unknownUser)
+  //-     .form-group.row
+  //-       label(class='col-md-2 col-form-label font-weight-bold', for='name') Name
+  //-       .col-md-8
+  //-         input.form-control(type='text', name='name', id='name', autocomplete='name', autofocus=true)
+  //-     .form-group.row
+  //-       label(class='col-md-2 col-form-label font-weight-bold', for='email') Email
+  //-       .col-md-8
+  //-         input.form-control(type='text', name='email', id='email', autocomplete='email')
+  //-   .form-group.row
+  //-     label(class='col-md-2 col-form-label font-weight-bold', for='message') Please describe the issue or your suggestion
+  //-     .col-md-8
+  //-       textarea.form-control(name='message', id='message', rows='7', autofocus=(!unknownUser).toString())
+  //-   .form-group
+  //-     .offset-md-2.col-md-8.p-1
+  //-       button.btn.btn-primary(type='submit')
+  //-         i.far.fa-envelope.fa-sm
+  //-         | Send

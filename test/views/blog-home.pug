@@ -1,0 +1,388 @@
+extends layout
+
+block content
+  // ================ Start banner Area =================
+  section.home-banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .home-banner-content.col-lg-5
+          h1 Rooftop
+          hr
+          p A Fine Dinning Restaurant
+  // ================ End banner Area =================
+  // ================ Left Right And Banner Icon =================
+  .go-down
+    a(href='#menu_area')
+      img.go-down-img(src='img/go-down.png' alt='')
+  // ================ Left Right And Banner Icon =================
+  // Start top-category-widget Area
+  section#menu_area.top-category-widget-area.pt-90.pb-90
+    .container
+      .row
+        .col-lg-4
+          .single-cat-widget
+            .content.relative
+              .overlay.overlay-bg
+              a(href='#' target='_blank')
+                .thumb
+                  img.content-image.img-fluid.d-block.mx-auto(src='img/blog/cat-widget1.jpg' alt='')
+                .content-details
+                  h4.content-title.mx-auto.text-uppercase Social life
+                  span
+                  p Enjoy your social life together
+        .col-lg-4
+          .single-cat-widget
+            .content.relative
+              .overlay.overlay-bg
+              a(href='#' target='_blank')
+                .thumb
+                  img.content-image.img-fluid.d-block.mx-auto(src='img/blog/cat-widget2.jpg' alt='')
+                .content-details
+                  h4.content-title.mx-auto.text-uppercase Politics
+                  span
+                  p Be a part of politics
+        .col-lg-4
+          .single-cat-widget
+            .content.relative
+              .overlay.overlay-bg
+              a(href='#' target='_blank')
+                .thumb
+                  img.content-image.img-fluid.d-block.mx-auto(src='img/blog/cat-widget3.jpg' alt='')
+                .content-details
+                  h4.content-title.mx-auto.text-uppercase Food
+                  span
+                  p Let the food be finished
+  // End top-category-widget Area
+  // Start post-content Area
+  section.post-content-area
+    .container
+      .row
+        .col-lg-8.posts-list
+          .single-post.row
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+            .col-lg-9.col-md-9
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img1.jpg' alt='')
+              a.posts-title(href='blog-single.html')
+                h3 Astronomy Binoculars A Great Alternative
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              a.primary-btn(href='blog-single.html') View More
+          .single-post.row
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+            .col-lg-9.col-md-9
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img2.jpg' alt='')
+              a.posts-title(href='blog-single.html')
+                h3 The Basics Of Buying A Telescope
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              a.primary-btn(href='blog-single.html') View More
+          .single-post.row
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+            .col-lg-9.col-md-9
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img3.jpg' alt='')
+              a.posts-title(href='blog-single.html')
+                h3 The Glossary Of Telescopes
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              a.primary-btn(href='blog-single.html') View More
+          .single-post.row
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+            .col-lg-9.col-md-9
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img4.jpg' alt='')
+              a.posts-title(href='blog-single.html')
+                h3 The Night Sky
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              a.primary-btn(href='blog-single.html') View More
+          .single-post.row
+            .col-lg-3.col-md-3.meta-details
+              ul.tags
+                li
+                  a(href='#') Food,
+                li
+                  a(href='#') Technology,
+                li
+                  a(href='#') Politics,
+                li
+                  a(href='#') Lifestyle
+              .user-details.row
+                p.user-name.col-lg-12.col-md-12.col-6
+                  a(href='#') Mark wiens
+                  span.lnr.lnr-user
+                p.date.col-lg-12.col-md-12.col-6
+                  a(href='#') 12 Dec, 2017
+                  span.lnr.lnr-calendar-full
+                p.view.col-lg-12.col-md-12.col-6
+                  a(href='#') 1.2M Views
+                  span.lnr.lnr-eye
+                p.comments.col-lg-12.col-md-12.col-6
+                  a(href='#') 06 Comments
+                  span.lnr.lnr-bubble
+            .col-lg-9.col-md-9
+              .feature-img
+                img.img-fluid(src='img/blog/feature-img5.jpg' alt='')
+              a.posts-title(href='blog-single.html')
+                h3 Telescopes 101
+              p.excert
+                | MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to
+                | spend money
+                | on boot camp when you can get the MCSE study materials yourself at a fraction.
+              a.primary-btn(href='blog-single.html') View More
+          nav.blog-pagination.justify-content-center.d-flex
+            ul.pagination
+              li.page-item
+                a.page-link(href='#' aria-label='Previous')
+                  span(aria-hidden='true')
+                    span.lnr.lnr-chevron-left
+              li.page-item
+                a.page-link(href='#') 01
+              li.page-item.active
+                a.page-link(href='#') 02
+              li.page-item
+                a.page-link(href='#') 03
+              li.page-item
+                a.page-link(href='#') 04
+              li.page-item
+                a.page-link(href='#') 09
+              li.page-item
+                a.page-link(href='#' aria-label='Next')
+                  span(aria-hidden='true')
+                    span.lnr.lnr-chevron-right
+        .col-lg-4.sidebar-widgets
+          .widget-wrap
+            .single-sidebar-widget.search-widget
+              form.search-form(action='#')
+                input(placeholder='Search Posts' name='search' type='text' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'")
+                button(type='submit')
+                  i.fa.fa-search
+            .single-sidebar-widget.user-info-widget
+              img(src='img/blog/user-info.png' alt='')
+              a(href='#')
+                h4 Charlie Barber
+              p
+                | Senior blog writer
+              ul.social-links
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-github
+                li
+                  a(href='#')
+                    i.fa.fa-behance
+              p
+                | Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend
+                | money on boot
+                | camp when you can get. Boot camps have itssuppor ters andits detractors.
+            .single-sidebar-widget.popular-post-widget
+              h4.popular-title Popular Posts
+              .popular-post-list
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp1.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Space The Final Frontier
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp2.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 The Amazing Hubble
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp3.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Astronomy Or Astrology
+                    p 02 Hours ago
+                .single-post-list.d-flex.flex-row.align-items-center
+                  .thumb
+                    img.img-fluid(src='img/blog/pp4.jpg' alt='')
+                  .details
+                    a(href='blog-single.html')
+                      h6 Asteroids telescope
+                    p 02 Hours ago
+            .single-sidebar-widget.ads-widget
+              a(href='#')
+                img.img-fluid(src='img/blog/ads-banner.jpg' alt='')
+            .single-sidebar-widget.post-category-widget
+              h4.category-title Post Catgories
+              ul.cat-list
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Technology
+                    p 37
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Lifestyle
+                    p 24
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Fashion
+                    p 59
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Art
+                    p 29
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Food
+                    p 15
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Architecture
+                    p 09
+                li
+                  a.d-flex.justify-content-between(href='#')
+                    p Adventure
+                    p 44
+            .single-sidebar-widget.newsletter-widget
+              h4.newsletter-title Newsletter
+              p
+                | Here, I focus on a range of items and features that we use in life without giving them a second thought.
+              .form-group.d-flex.flex-row
+                .col-autos
+                  .input-group
+                    .input-group-prepend
+                      .input-group-text
+                        i.fa.fa-envelope(aria-hidden='true')
+                    input#inlineFormInputGroup.form-control(type='text' placeholder='Enter email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'")
+                a.bbtns(href='#') Subcribe
+              p.text-bottom
+                | You can unsubscribe at any time
+            .single-sidebar-widget.tag-cloud-widget
+              h4.tagcloud-title Tag Clouds
+              ul
+                li
+                  a(href='#') Technology
+                li
+                  a(href='#') Fashion
+                li
+                  a(href='#') Architecture
+                li
+                  a(href='#') Fashion
+                li
+                  a(href='#') Food
+                li
+                  a(href='#') Technology
+                li
+                  a(href='#') Lifestyle
+                li
+                  a(href='#') Art
+                li
+                  a(href='#') Adventure
+                li
+                  a(href='#') Food
+                li
+                  a(href='#') Lifestyle
+                li
+                  a(href='#') Adventure
+  // End post-content Area
+
