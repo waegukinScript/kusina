@@ -18,31 +18,28 @@ html(lang='en')
        }
    body
      div(style='margin-top: 50px')
-       h1(style='margin-left: 70px;') Events
+       h1(style='margin-left: 70px;') Registrations
        hr(style=' margin-top:0px; height:10px;border:none;color:#333;background-color:#333; margin-left: 70px; margin-right: 73px;')
        each event, index in eventsReceived
            p(style='margin-left: 70px;')= index+1
             table(border='1')
                 tbody
                     tr
-                        td.heading Event Name
-                        td.value= event.eventName
+                        td.heading Name
+                        td.value= event.name
                     tr
-                        td.heading Event Date
-                        td.value= event.eventDate
+                        td.heading Email
+                        td.value= event.email
                     tr
-                        td.heading Event Time
-                        td.value= event.eventTime
+                        td.heading Phone Number
+                        td.value= event.phoneNumber
                     tr
-                        td.heading Guest
-                        td.value= event.guest
+                        td.heading Date
+                        td.value= event.date
                     tr
-                        td.heading Budget
-                        td.value= event.budget
+                        td.heading Time
+                        td.value= event.time
                     tr
-                        td.heading Contact Name
-                        td.value= event.contactName
-                    tr
-                        td.heading Email Address
-                        td.value= event.emailAddress
+                        td.heading Persons
+                        td.value= event.persons
 

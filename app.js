@@ -44,13 +44,15 @@ const contactDatabaseController = require('./controllers/contactDatabase');
 
 
 const eventController = require('./controllers/event');
+const reservationController = require('./controllers/reservation');
+
 const elementsController = require('./controllers/elements');
 const blogController = require('./controllers/blog');
 const blogDetailsController = require('./controllers/blog-details');
 const galleryController = require('./controllers/gallery');
 const aboutController = require('./controllers/about');
 const menuController = require('./controllers/menu');
-const chefController = require("./controllers/chef");
+const chefController = require('./controllers/chef');
 
 const eventDatabaseController = require('./controllers/eventDatabase');
 const userDatabaseController = require('./controllers/userDatabase');
@@ -205,12 +207,16 @@ app.post('/contact/email/:id', contactController.postEmailContact);
 
 app.get('/eventDatabase', eventDatabaseController.getEventDatabase);
 app.get('/userDatabase', userDatabaseController.getUserDatabase);
+
+
+
+app.get('/reservation', reservationController.reservation);
 app.post('/event', eventController.postEvent);
 app.post('/event/delete/:id', eventController.postDeleteEvent);
 app.post('/event/get-report/:id', eventController.postGetReportEvent);
 app.post('/event/delete-page/:page', eventController.postDeletePageEvent);
 app.post('/event/save-page/:page', eventController.postSavePageEvent);
-
+//
 app.post('/event/send-email-page/:page', eventController.postSendEmailPageContact);
 app.post('/event/email-page/:page', eventController.postEmailPageEvent);
 app.post('/event/send-email/:id', eventController.postSendEmailEvent);
@@ -220,13 +226,14 @@ app.get('/eventDatabase', eventDatabaseController.getEventDatabase);
 app.post('/event/edit/:id', eventController.postEditEvent);
 app.post('/event/update/:id', eventController.postUpdateEvent);
 
+
 app.get('/elements', elementsController.getElements);
 app.get('/blog', blogController.getBlog);
 app.get('/blog-details', blogDetailsController.getBlogDetails);
 app.get('/gallery', galleryController.getGallery);
 app.get('/about', aboutController.getAbout);
 app.get('/menu', menuController.getMenu);
-app.get("/chef", chefController.getChef);
+app.get('/chef', chefController.getChef);
 
 app.get('/userAdmin', userAdminController.getUserAdmin);
 app.get('/account', passportConfig.isAuthenticated, userController.getAccount);

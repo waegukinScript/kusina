@@ -1,10 +1,10 @@
 include partials/header
-section.hero-wrap.hero-wrap-2(style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio='0.5')
+section.hero-wrap.hero-wrap-2(style="background-image: url('/images/bg_4.jpg');" data-stellar-background-ratio='0.5')
     .overlay
     .container
         .row.no-gutters.slider-text.align-items-center.justify-content-center
             .col-md-9.ftco-animate.text-center
-                h1.mb-2.bread Make Reservation
+                h1.mb-2.bread Edit Reservation
                 p.breadcrumbs
                     span.mr-2
                         a(href='index.html')
@@ -16,33 +16,33 @@ section.hero-wrap.hero-wrap-2(style="background-image: url('images/bg_4.jpg');" 
 section.ftco-section.ftco-no-pt.ftco-no-pb
     .container
         .row.d-flex
-            .col-md-5.ftco-animate.img.img-2(style='background-image: url(images/bg_6.jpg);')
+            .col-md-5.ftco-animate.img.img-2(style='background-image: url(/images/bg_6.jpg);')
             .col-md-7.ftco-animate.makereservation.p-4.p-md-5
                 .heading-section.ftco-animate.mb-5
                     span.subheading Book a Table
                     h2.mb-4 Make Reservation
-                form(action='/event' method='POST')
+                form(action=`/event/update/${event.id}` method='POST')
                     .row
                         .col-md-6
                             .form-group
                                 label(for='') Name
-                                input.form-control(type='text' placeholder='Your Name' name='name')
+                                input.form-control(type='text' placeholder='Your Name' name='name' value=event.name)
                         .col-md-6
                             .form-group
                                 label(for='') Email
-                                input.form-control(type='text' placeholder='Your Email' name='email')
+                                input.form-control(type='text' placeholder='Your Email' name='email' value=event.email)
                         .col-md-6
                             .form-group
                                 label(for='') Phone
-                                input.form-control(type='text' placeholder='Phone' name='phoneNumber')
+                                input.form-control(type='text' placeholder='Phone' name='phoneNumber' value=event.phoneNumber)
                         .col-md-6
                             .form-group
                                 label(for='') Date
-                                input#book_date.form-control(type='text' placeholder='Date' name='date')
+                                input#book_date.form-control(type='text' placeholder='Date' name='date' value=event.date)
                         .col-md-6
                             .form-group
                                 label(for='') Time
-                                input#book_time.form-control(type='text' placeholder='Time' name='time')
+                                input#book_time.form-control(type='text' placeholder='Time' name='time' value=event.time)
                         .col-md-6
                             .form-group
                                 label(for='') Person
@@ -50,11 +50,12 @@ section.ftco-section.ftco-no-pt.ftco-no-pb
                                     .icon
                                         span.ion-ios-arrow-down
                                     select.form-control(name='persons' id='')
+                                        option(value=event.persons selected)= event.persons
                                         option(value='1') 1
                                         option(value='2') 2
                                         option(value='3') 3
                                         option(value='4+') 4+
                         .col-md-12.mt-3
                             .form-group
-                                input.btn.btn-primary.py-3.px-5(type='submit' value='Make a Reservation')
+                                input.btn.btn-primary.py-3.px-5(type='submit' value='Update Reservation')
 include partials/footer
